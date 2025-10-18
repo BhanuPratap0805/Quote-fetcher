@@ -11,7 +11,7 @@ export default function QuoteFetcher() {
     setError('');
     
     try {
-      const response = await fetch('http://localhost:3001/api/quote');
+      const response = await fetch('/api/quote');
       
       if (!response.ok) {
         throw new Error('Failed to fetch quote');
